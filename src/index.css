@@ -20,6 +20,7 @@ body {
 main {
   margin-left: 5rem;
   padding: 1rem;
+  color: var(--text);
 }
 
 .navbar {
@@ -79,14 +80,19 @@ main {
   filter: opacity(100%)
 }
 
+.active:not(#logo-link) {
+  color: var(--highlight);
+  border-right: 5px solid;
+}
+
 .link-text {
-  transition: filter 500ms;
+  transition: filter 300ms;
   filter:opacity(0%);
   position: absolute;
 }
 
 .nav-link svg {
-  transition: filter 500ms;
+  transition: filter 300ms;
   min-width: 2rem;
   margin: 0 1.5rem;
 }
