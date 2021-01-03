@@ -1,7 +1,7 @@
 import React from 'react'
 import Icon from './icons'
 import {Link} from 'react-router-dom'
-
+import gitlogo from './gitLogo.png'
 
 function Home(props) {
     return(
@@ -25,6 +25,11 @@ function Home(props) {
                         <span className="button-text">Contact</span>
                     </Link>
                 </div>
+                {/* <div className="profile-links">
+                    <Link>
+                        <img src={gitlogo} />
+                    </Link>
+                </div> */}
             </div>
         </main>
     )

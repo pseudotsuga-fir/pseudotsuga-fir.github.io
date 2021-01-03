@@ -5,11 +5,11 @@
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  --bg-primary: #292A34;
-  --bg-nav-prim: #1B1C24;
-  --bg-nav-sec: #000810;
-  --highlight: #6577FF;
-  --text: #FFFFFF;
+  --bg-primary: #D6D5CB;
+  --bg-nav-prim: #E4E3DB;
+  --bg-nav-sec: #FFF7EF;
+  --highlight: #9A8800;
+  --text: #000000;
 
   --transition: 200ms;
 }
@@ -17,8 +17,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(41,42,52);
-  background: linear-gradient(0deg, rgba(41,42,52,1) 0%, rgba(45,47,71,1) 100%);
+  background: var(--bg-primary);
   background-attachment: scroll;
   background-color: var(--bg-primary);
 }
@@ -28,12 +27,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--bg-nav-sec);
+  background: var(--bg-primary);
   border-radius: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--bg-nav-prim);
+  background: var(--highlight);
   border-radius: 5px;
 }
 
@@ -78,7 +77,7 @@ main {
 
 .nav-list #logo {
   background-color: var(--bg-nav-sec);
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 85%;
 }
 
@@ -112,6 +111,7 @@ main {
 
 .link-text {
   font-family: 'Darker Grotesque', sans-serif;
+  font-weight: bolder;
   font-size: 1.5rem;
   transition: filter 300ms;
   filter:opacity(0%);
@@ -166,11 +166,11 @@ main {
   }
 
   #home-name {
-    font-size: 10vw;
+    font-size: 3rem;
   }
 
   #home-desc {
-    font-size: 5vw;
+    font-size: 1.6rem;
   }
 
   .buttons {
@@ -209,12 +209,20 @@ main {
   
   .button-text {
     font-family: 'Darker Grotesque', sans-serif;
-    font-weight: lighter;
+    font-weight:normal;
     font-size: 1.2rem;
     padding: 0.2rem 0.5rem;
     padding-top: 50px;
   }
 
+  .project-wrp {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .projects {
+    margin-bottom: 5rem;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -225,12 +233,13 @@ main {
   }
 
   #home-name {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 
   #home-desc {
-    margin-top:-1rem;
+    margin-top:-2rem;
+    font-size: 2rem;
   }
   
   .home .lead {
@@ -293,6 +302,11 @@ main {
     font-size: 1.5rem;
     padding-bottom: 8px;
   }
+
+  .project-wrp {
+    width: 50vw;
+  }
+
 }
 
 footer {
@@ -323,6 +337,84 @@ footer {
 
 #home-desc {
   font-family: 'Darker Grotesque', sans-serif;
-  font-weight: lighter;
 }
 
+.projects h1 {
+  font-size: 3rem;
+}
+
+.project-wrp {
+  font-family: 'Darker Grotesque', sans-serif;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  /* border: 1px solid black; */
+}
+
+.left-clm {
+  display: grid;
+}
+
+.right-clm {
+  display: grid;
+}
+
+.project-title img {
+  width: 100%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-title h2 {
+  text-decoration: underline;
+  font-size: 2.3rem;
+}
+
+.features h2 {
+  text-decoration: underline;
+}
+
+.made h2 {
+  text-decoration: underline;
+}
+
+.proj-lst {
+  list-style-type: circle;
+}
+
+.proj-item {
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.proj-button {
+  color:black;
+  display: block;
+  width: 50px;
+  height: 50px;
+  /* border: 3px solid black; */
+}
+
+.proj-button img {
+  padding: 2.5px;
+  width: 90%;
+}
+
+.proj-button-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.links {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+.git-link {
+  float: left;
+  margin-right: 15%;
+}
+
+.view-link {
+  float: left;
+}
