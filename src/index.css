@@ -405,11 +405,6 @@ footer {
   font-size: 1.1rem;
 }
 
-.links {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-}
-
 .git-link {
   float: left;
   margin-right: 15%;
@@ -418,3 +413,4 @@ footer {
 .view-link {
   float: left;
 }
+
