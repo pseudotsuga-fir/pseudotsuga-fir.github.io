@@ -10,6 +10,8 @@ import './index.css'
 
 import {HashRouter, Route} from 'react-router-dom'
 
+console.log(React.version);
+
 function App() {
     return (
         <div className="page-container">

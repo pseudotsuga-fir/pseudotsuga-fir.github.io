@@ -12,7 +12,6 @@ function Resume(props) {
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
       setPageNumber(1);
-      removeTextLayerOffset()   
     }
   
     function changePage(offset) {
@@ -25,50 +24,28 @@ function Resume(props) {
   
     function nextPage() {
       changePage(1);
-    }
-
-    function removeTextLayerOffset() {
-        const textLayers = document.querySelectorAll(".react-pdf__Page__textContent");
-          textLayers.forEach(layer => {
-            const { style } = layer;
-            style.top = "0";
-            style.left = "0";
-            style.transform = "";
-        });
       }
       
 
     return(
         <main>
+            <h1>Resume</h1>
             <div className="resume">
-                <h1>Resume</h1>
                 <div className="pdf-viewer">
-                    <Document className="pdf"
-                    file={resume} 
-                    onLoadSuccess={onDocumentLoadSuccess}
-                    >
-                        <Page pageNumber={pageNumber} />
+                    <div className="page-controls">
+                      <button className="button-left" type="button" disabled={pageNumber <= 1} onClick={previousPage}>&lt;</button>
+                      <p>{pageNumber} of {numPages}</p>
+                      <button className="button-right"ype="button" disabled={pageNumber >= numPages} onClick={nextPage}>&gt;</button>
+                    </div>
+                    <Document className="pdf" file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+                      <Page pageNumber={pageNumber} />
                     </Document>
-                    <p>Page {pageNumber} of {numPages}</p>
-                    <button
-                    type="button"
-                    disabled={pageNumber <= 1}
-                    onClick={previousPage}
-                    >
-                    Previous
-                    </button>
-                    <button
-                    type="button"
-                    disabled={pageNumber >= numPages}
-                    onClick={nextPage}
-                    >
-                    Next
-                    </button>
                 </div>
                 
             </div>
         </main>
     )
+    
 }
 
 export default Resume;
