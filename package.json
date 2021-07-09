@@ -10,12 +10,13 @@
     "@testing-library/user-event": "^12.6.0",
     "add": "^2.0.6",
     "or": "^0.2.0",
+    "print-js": "^1.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-pdf": "^5.1.0",
     "react-pdf-selection": "^0.6.20",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "4.0.3",
     "web-vitals": "^0.2.4",
     "yarn": "^1.22.10"
   },
@@ -36,7 +37,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
+      "",
       "not op_mini all"
     ],
     "development": [

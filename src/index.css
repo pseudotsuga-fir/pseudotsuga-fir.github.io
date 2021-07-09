@@ -214,6 +214,7 @@ main {
     font-size: 1.2rem;
     padding: 0.2rem 0.5rem;
     padding-top: 50px;
+    text-decoration: none;
   }
 
   .project-wrp {
@@ -257,7 +258,7 @@ main {
   }
   
   .dir-button {
-    background: linear-gradient(to bottom, rgba(0, 0, 0 ,0) 50%, var(--highlight) 50%);
+    background: linear-gradient(to bottom, rgba(121, 114, 114, 0) 50%, var(--highlight) 50%);
     background-size: 100% 200%;
     background-position:left top;
     border: 5px solid var(--text);
@@ -281,6 +282,7 @@ main {
   .dir-button:hover .button-text {
     filter: opacity(100%);
     transform: translateX(30px);
+    text-decoration: none;
   }
   
   .dir-button:hover svg {
@@ -302,6 +304,7 @@ main {
     font-weight: lighter;
     font-size: 1.5rem;
     padding-bottom: 8px;
+    text-decoration: none;
   }
 
   .project-wrp {
@@ -418,12 +421,16 @@ footer {
 
 .resume {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  height: 792px;
+  position: absolute;
+  margin-top: -130px;
 }
 
 .pdf-viewer {
   width: 612px !important;
   height: 792px!important;
+  margin-left: 6vw;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -448,6 +455,12 @@ footer {
 .react-pdf__Page__annotations {
   height: 0px;
 }
+
+.react-pdf__Document {
+  width: 612px !important;
+  height: 792px;
+}
+
 
 .page-controls {
   border-color: black;
@@ -483,6 +496,7 @@ footer {
 
 .page-controls button:enabled:hover {
   background-color: var(--bg-nav-prim);
+  cursor: pointer;
 }
 
 .page-controls p {
@@ -493,4 +507,106 @@ footer {
 
 .pdf-viewer:hover .page-controls {
   opacity: 100;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 45vw;
+  margin-top: 40px;
+  position: absolute;
+  height: 752px;
+}
+
+.download-button {
+  background: linear-gradient(to bottom, rgba(121, 114, 114, 0) 50%, var(--highlight) 50%);
+  background-size: 100% 200%;
+  background-position:left top;  border: 5px solid var(--text);
+  color: var(--text);
+  height: 76px;
+  width: 150px;
+  margin: 0 3.5vw;
+  transition: 150ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.download-button svg {
+  position: absolute;
+  padding-top: 30px;
+  transition: 150ms ease;
+  padding-bottom: 30px;
+}
+
+.download-button:hover {
+  background-position:right bottom;
+  border: 5px solid var(--highlight);
+  cursor: pointer;
+}
+
+.download-button:hover .button-text {
+  filter: opacity(100%);
+  transform: translateX(30px);
+  text-decoration: none !important;
+}
+
+.download-button:hover svg {
+  transform: translateX(-40px);
+}
+
+.doc-type {
+  max-width: 45px;
+}
+
+#download-svg {
+  padding-left: 50px;
+  padding-top: 80px;
+  max-width: 25px;
+}
+
+#print-icon {
+  max-width: 62px !important;
+}
+
+#save-text {
+  font-size: 3em;
+  margin-left: 48vw;
+  margin-top: -10px;
+}
+
+#save-desc {
+  font-style: 1em;
+  margin-left: 48vw;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 500px;
+}
+
+.download-descs {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-left: 60vw;
+  padding-top: 60px;
+}
+
+#pdf-desc {
+  margin-top: 210px;
+}
+
+#print-desc {
+  margin-top: 420px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
 }
