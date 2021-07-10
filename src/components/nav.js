@@ -1,8 +1,11 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import Icon from './icons'
 
 function Nav(props)  {
+
+    const [open, setOpen] = useState(false);
+
     return (
       <nav className="navbar">
         <ul className="nav-list">
@@ -33,11 +36,36 @@ function Nav(props)  {
               <Icon icon="resume"/>
             </NavLink>
           </li>
+
           <li className="nav-item">
             <NavLink to="/contact" exact activeClassName="nav-link active" className="nav-link">
               <span className="link-text">Contact</span>
               <Icon icon="contact"/>
             </NavLink>
+          </li>
+
+          <li className="" id="theme-nav">
+            <div className="nav-link" id="theme-button">
+              <span className="link-text">Change<br /> Theme</span>
+              <Icon icon="sun"/>
+              {/* <div id="theme-wrap"> */}
+                <ul className="themes">
+                <Icon icon="carat-left"/>
+                  <li className="theme-item">
+                    <span className="theme-text">Light</span>
+                    <Icon icon="sun"/>
+                  </li>
+                  <li className="theme-item">
+                    <span className="theme-text">Dark</span>
+                    <Icon icon="moon"/>
+                  </li>
+                  <li className="theme-item">
+                    <span className="theme-text">90's</span>
+                    <Icon icon="2003"/>
+                  </li>
+                </ul>
+              {/* </div> */}
+            </div>
           </li>
         </ul>
       </nav>
