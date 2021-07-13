@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
 :root {
   font-size: 18px;
   font-family: sans-serif;
+  --transition: 200ms;
+}
 
+.light-theme {
   --bg-primary: #D6D5CB;
   --bg-nav-prim: #E4E3DB;
   --bg-nav-sec: #FFF7EF;
   --highlight: #9A8800;
   --text: #000000;
+  --disabled-text: #b9b9b9;
+}
 
-  --transition: 200ms;
+.dark-theme {
+  --bg-primary: #292a34;
+  --bg-nav-prim: #1b1c24;
+  --bg-nav-sec: #3d3d3d;
+  --highlight: #6577ff;
+  --text: #FFFFFF;
+  --disabled-text: #797979;
 }
 
 body {
@@ -129,14 +148,16 @@ main {
 }
 
 #theme-wrap {
-  /* position: absolute; */
+  position: absolute;
   display: none;
+  width: 300px;
+  height: 250px;
 }
 
 .themes {
   position: absolute;
-  margin-left: 310px;
-  margin-bottom: 180px;
+  margin-left: 210px;
+  margin-top: -100px;
   background-color: var(--bg-nav-prim);
   list-style: none;
   height: 250px;
@@ -151,7 +172,7 @@ main {
   justify-content: center;
 }
 
-#theme-nav:hover #theme-warp{
+#theme-nav:hover #theme-wrap{
   display: block;
 }
 
@@ -164,6 +185,12 @@ main {
 .theme-item svg {
   width: 45px;
   height: auto;
+}
+
+.theme-item:hover {
+  transition: 200ms ease;
+  color: var(--highlight);
+  cursor: pointer;
 }
 
 .theme-text{
@@ -452,17 +479,16 @@ footer {
   display: block;
   width: 50px;
   height: 50px;
-  /* border: 3px solid black; */
 }
 
-.proj-button img {
-  padding: 2.5px;
-  width: 90%;
+.proj-button svg {
+  color: var(--text);
 }
 
 .proj-button-link {
   text-decoration: none;
   font-size: 1.1rem;
+  color: var(--text);
 }
 
 .git-link {
@@ -472,6 +498,13 @@ footer {
 
 .view-link {
   float: left;
+  color: var(--text);
+}
+
+.git-link svg {
+  width: 65px;
+  margin-top: -14px;
+  margin-left: -5px;
 }
 
 .resume {
@@ -539,6 +572,7 @@ footer {
   font-size: 15px;
   text-align: center;
   width: 40px;
+  color: var(--disabled-text);
 }
 
 .button-left {
@@ -554,7 +588,12 @@ footer {
   cursor: pointer;
 }
 
+.page-controls button:enabled {
+  color: var(--text);
+}
+
 .page-controls p {
+  color: var(--text);
   margin-top: 10px;
   width: 60px;
   background-color: var(--bg-nav-sec);
@@ -656,12 +695,4 @@ footer {
 
 #print-desc {
   margin-top: 420px;
-}
-
-a,
-a:link,
-a:visited,
-a:hover,
-a:active{
-    text-decoration: none;
 }

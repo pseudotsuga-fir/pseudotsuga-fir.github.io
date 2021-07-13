@@ -1,7 +1,6 @@
 import React from 'react'
 import Icon from './icons'
 import {Link} from 'react-router-dom'
-import gitlogo from './gitLogo.png'
 
 function Home(props) {
     return(
