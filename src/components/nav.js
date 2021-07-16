@@ -102,8 +102,10 @@ function Nav(props)  {
                     <Icon icon="moon"/>
                   </li>
                   <li className="theme-item">
+                    <a className="theme-item" href="https://pseudotsuga-fir.github.io/90s-Portfolio/">
                     <span className="theme-text">90's</span>
                     <Icon icon="90's"/>
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -5,6 +5,9 @@ function Contact(props) {
         <main>
             <div className="contact">
                 <h1>Contact</h1>
+                <form>
+                    
+                </form>
             </div>
         </main>
     )
