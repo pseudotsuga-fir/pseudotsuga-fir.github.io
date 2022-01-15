@@ -61,6 +61,7 @@ main {
   padding: 1rem;
   color: var(--text);
   height: 100vh;
+  /* overflow: hidden; */
 }
 
 .page-container {
@@ -217,6 +218,7 @@ main {
     bottom: 0;
     width: 100%;
     height: 5rem;
+    position: fixed;
   }
 
   .nav-list {
@@ -224,12 +226,20 @@ main {
     width:100%;
   }
 
-  #logo{
+  #logo{ 
+    display: none;
+  }
+
+  #theme-nav {
     display: none;
   }
 
   .nav-item:not(#logo) {
     width: 100%;
+  }
+
+  .nav-item svg {
+    max-width: 50px;
   }
 
   .nav-link {
@@ -314,7 +324,8 @@ main {
   .navbar{
     top: 0;
     height: 100%;
-    width: 5rem;
+    max-width: 5rem;
+    position: fixed;
   }
 
   #home-name {
@@ -513,7 +524,7 @@ footer {
   flex-direction: row;
   height: 792px;
   position: absolute;
-  margin-top: -130px;
+  margin-top: 30px;
 }
 
 .pdf-viewer {
@@ -608,10 +619,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 45vw;
-  margin-top: 40px;
+  /* margin-left: 50vw; */
+  /* margin-top: 40px; */
   position: absolute;
-  height: 752px;
+  height: 70vh;
+  min-height: 500px;
 }
 
 .download-button {
@@ -621,7 +633,6 @@ footer {
   color: var(--text);
   height: 76px;
   width: 150px;
-  margin: 0 3.5vw;
   transition: 150ms ease;
   display: flex;
   flex-direction: column;
@@ -653,6 +664,11 @@ footer {
   transform: translateX(-40px);
 }
 
+.dl-button-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .doc-type {
   max-width: 45px;
 }
@@ -669,31 +685,41 @@ footer {
 
 #save-text {
   font-size: 3em;
-  margin-left: 48vw;
-  margin-top: -10px;
 }
 
 #save-desc {
   font-style: 1em;
-  margin-left: 48vw;
-  margin-top: -20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   width: 500px;
 }
 
 .download-descs {
-  position: absolute;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  margin-left: 60vw;
-  padding-top: 60px;
+  margin-left: 50px;
 }
 
-#pdf-desc {
-  margin-top: 210px;
+#resume-buttons {
+  margin-left: 50vw;
 }
 
-#print-desc {
-  margin-top: 420px;
+/* Mobile styles for resume page */
+@media only screen and (max-width: 1436px) {
+  #save-text {
+    /* margin-top: 190px; */
+  }
+
+  #resume-buttons {
+    width: 698px;
+    margin-top: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 900px;
+  }
+
+  .pdf-viewer {
+    width: 612px;
+    margin-left: 20vw;
+  }
 }

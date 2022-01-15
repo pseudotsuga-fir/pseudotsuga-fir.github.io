@@ -32,8 +32,6 @@ function Resume(props) {
         <main>
             <h1>Resume</h1>
 
-            <h2 id="save-text">Get yourself a copy.</h2>
-            <h4 id="save-desc">View my resume on the document viewer to the left, or choose an option below to get your own digital or physical copy.</h4>
             <div className="resume">
                 <div className="pdf-viewer">
                     <div className="page-controls">
@@ -45,28 +43,40 @@ function Resume(props) {
                       <Page pageNumber={pageNumber} />
                     </Document>
                 </div>
-              <div className="download-buttons">
-                <a href="./test.pdf" download>
-                  <div className="download-button">
-                    <Icon icon="docx"/>
-                    <span className="button-text">.docx</span>
-                  </div>
-                </a>
-                <a href="./test.pdf" download>
-                  <div className="download-button">
-                    <Icon icon="pdf"/>
-                    <span className="button-text">.pdf</span>
-                  </div>
-                </a>
-                <div id="print-button" className="download-button" onClick={function() { printJS('/test.pdf') }}>
-                  <Icon icon="printer"/>
-                  <span className="button-text">Print</span>
-                </div>
-              </div>
             </div>
-            <span className="download-descs">-Save as a word document.</span>
-            <span id="pdf-desc" className="download-descs">-Save as a PDF file.</span>
-            <span id="print-desc" className="download-descs">-Print direcetly to a connected printer.</span>
+            <div id="resume-buttons">
+              <div id="download-info">
+                <h2 id="save-text">Get yourself a copy.</h2>
+                <h4 id="save-desc">View my resume on the document viewer to the left, or choose an option below to get your own digital or physical copy.</h4>
+              </div>
+              <div className="download-buttons">
+                  <div className="dl-button-wrap">
+                    <a href="./test.pdf" download>
+                      <div className="download-button">
+                        <Icon icon="docx"/>
+                        <span className="button-text">.docx</span>
+                      </div>
+                    </a>
+                    <span className="download-descs">-Save as a word document.</span>
+                  </div>
+                  <div className="dl-button-wrap">
+                    <a href="./test.pdf" download>
+                      <div className="download-button">
+                        <Icon icon="pdf"/>
+                        <span className="button-text">.pdf</span>
+                      </div>
+                    </a>
+                    <span id="pdf-desc" className="download-descs">-Save as a PDF file.</span>
+                  </div>
+                  <div className="dl-button-wrap">
+                    <div id="print-button" className="download-button" onClick={function() { printJS('/test.pdf') }}>
+                      <Icon icon="printer"/>
+                      <span className="button-text">Print</span>
+                    </div>
+                    <span id="print-desc" className="download-descs">-Print direcetly to a connected printer.</span>
+                  </div>
+                </div>
+            </div>
         </main>
     )
     
