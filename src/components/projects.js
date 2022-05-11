@@ -71,8 +71,10 @@ function Projects(props) {
                     <div className="left-clm">
                         <div className="project-title">
                             <a href="https://github.com/pseudotsuga-fir/cs362-coad-resources" rel="noreferrer" target="_blank">Legacy Application Testing</a>
-                            <div className='img-wrap'><img src={rubyGif} alt="?" className='animated'/></div>
-                            <div className='img-wrap'><img src={rubyImg} alt="?" className='still'/></div>
+                            <a href="https://github.com/pseudotsuga-fir/cs362-coad-resources" rel="noreferrer" target="_blank">
+                                <div className='img-wrap'><img src={rubyGif} alt="?" className='animated'/></div>
+                                <div className='img-wrap'><img src={rubyImg} alt="?" className='still'/></div>
+                            </a>
                             <p>This is a team project I worked on to experience legacy code. We adopted a legacy application built on Ruby on Rails and got the entire application under test using RSpec. The goal of this project was to become familiar with handling and testing legacy software. We also used test driven development to implement changes in the application. Check out the repository’s commit history and closed issues to get a feel for the workflow and testing process.</p>
                         </div>
                     </div>
@@ -116,8 +118,10 @@ function Projects(props) {
                     <div className="left-clm">
                         <div className="project-title">
                             <a href="/" rel="noreferrer" target="_blank">This Portfolio</a>
-                            <div className='img-wrap'><img src={portGif} alt="?" className='animated'/></div>
-                            <div className='img-wrap'><img src={portImg} alt="?" className='still'/></div>
+                            <a href="/" rel="noreferrer" target="_blank">
+                                <div className='img-wrap'><img src={portGif} alt="?" className='animated'/></div>
+                                <div className='img-wrap'><img src={portImg} alt="?" className='still'/></div>
+                            </a>
                             <p>Although not the typical website you might see using React, this portfolio was indeed made using the React framework. There were a few reasons for choosing to use React as opposed to vanilla JavaScript, the biggest being that it allows seamless navigation between pages. This simple static portfolio website was my way of trying out React.</p>
                         </div>
                     </div>
