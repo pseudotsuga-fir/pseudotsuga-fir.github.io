@@ -464,7 +464,9 @@ footer {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.project-title h2 {
+.project-title a {
+  all: unset;
+  cursor: pointer;
   text-decoration: underline;
   font-size: 2.3rem;
 }
@@ -503,9 +505,19 @@ footer {
   color: var(--text);
 }
 
+.links {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .git-link {
-  float: left;
-  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
 }
 
 .view-link {
@@ -702,6 +714,27 @@ footer {
 
 #resume-buttons {
   margin-left: 50vw;
+}
+
+.disabled {
+  color: #8a8a8a !important;
+}
+
+.disabled svg {
+  color: #8a8a8a !important;
+}
+
+.img-wrap {
+  position: relative;
+  display: block;
+}
+
+.still:hover {
+  opacity: 0;
+}
+
+.animated {
+  position: absolute;
 }
 
 /* Mobile styles for resume page */
