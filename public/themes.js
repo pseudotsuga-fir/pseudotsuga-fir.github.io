@@ -8,10 +8,14 @@ function setDark() {
     document.body.className = "dark-theme";
 };
 
-(function () {
-    if (localStorage.getItem('theme') === 'dark-theme') {
-        setDark();
-    } else {
-        setLight();
-    }
-})();
+window.addEventListener('load', function () {
+
+    (function () {
+        if (localStorage.getItem('theme') === 'dark-theme') {
+            setDark();
+        } else {
+            setLight();
+        }
+    })();
+
+})
