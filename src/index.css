@@ -464,6 +464,10 @@ footer {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.project-title p {
+  font-size: 1.1rem;
+}
+
 .project-title a {
   all: unset;
   cursor: pointer;
