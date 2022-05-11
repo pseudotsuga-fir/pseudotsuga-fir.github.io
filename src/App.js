@@ -4,13 +4,10 @@ import Home from './components/home'
 import Projects from './components/projects'
 import Resume from './components/resume'
 import Contact from "./components/contact"
-import Footer from "./components/footer"
 import ScrollUp from "./components/scroll-up"
 import './index.css'
 
 import {HashRouter, Route} from 'react-router-dom'
-
-console.log(React.version);
 
 function App() {
     return (
@@ -23,7 +20,6 @@ function App() {
                     <Route path="/resume" exact component={Resume}/>
                     <Route path="/contact" exact component={Contact}/>
                 </ScrollUp>
-            {/* <Footer /> */}
         </HashRouter>
         </div>
     )

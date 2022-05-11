@@ -115,7 +115,7 @@ function Projects(props) {
                 <div className="project-wrp">
                     <div className="left-clm">
                         <div className="project-title">
-                            <a href="#" rel="noreferrer" target="_blank">This Portfolio</a>
+                            <a href="/" rel="noreferrer" target="_blank">This Portfolio</a>
                             <div className='img-wrap'><img src={portGif} alt="?" className='animated'/></div>
                             <div className='img-wrap'><img src={portImg} alt="?" className='still'/></div>
                             <p>Although not the typical website you might see using React, this portfolio was indeed made using the React framework. There were a few reasons for choosing to use React as opposed to vanilla JavaScript, the biggest being that it allows seamless navigation between pages. This simple static portfolio website was my way of trying out React.</p>
@@ -147,10 +147,10 @@ function Projects(props) {
                                 </a>
                             </div>
                             <div className="view-link">
-                                <a rel="noreferrer" target="_blank" href="#" className="proj-button">
+                                <a rel="noreferrer" target="_blank" href="/" className="proj-button">
                                     <Icon icon="desktop"/>
                                 </a>
-                                <a rel="noreferrer" target="_blank" href="#" className="proj-button-link">
+                                <a rel="noreferrer" target="_blank" href="/" className="proj-button-link">
                                     <span className="proj-button-text">Live view</span>
                                 </a>
                             </div>
