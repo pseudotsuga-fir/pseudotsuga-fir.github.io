@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d31a8e7a.chunk.css",
-    "main.js": "/static/js/main.fc4b3986.chunk.js",
-    "main.js.map": "/static/js/main.fc4b3986.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
-    "static/js/2.4cd5edc0.chunk.js": "/static/js/2.4cd5edc0.chunk.js",
-    "static/js/2.4cd5edc0.chunk.js.map": "/static/js/2.4cd5edc0.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d31a8e7a.chunk.css.map": "/static/css/main.d31a8e7a.chunk.css.map",
-    "static/js/2.4cd5edc0.chunk.js.LICENSE.txt": "/static/js/2.4cd5edc0.chunk.js.LICENSE.txt",
-    "static/media/temp-img.cd8d9dd0.jpg": "/static/media/temp-img.cd8d9dd0.jpg",
-    "static/media/test.da24d2b4.pdf": "/static/media/test.da24d2b4.pdf"
+    "main.css": "./static/css/main.b662116f.chunk.css",
+    "main.js": "./static/js/main.47cf636b.chunk.js",
+    "main.js.map": "./static/js/main.47cf636b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.eac7fa23.js",
+    "runtime-main.js.map": "./static/js/runtime-main.eac7fa23.js.map",
+    "static/js/2.4cd5edc0.chunk.js": "./static/js/2.4cd5edc0.chunk.js",
+    "static/js/2.4cd5edc0.chunk.js.map": "./static/js/2.4cd5edc0.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.b662116f.chunk.css.map": "./static/css/main.b662116f.chunk.css.map",
+    "static/js/2.4cd5edc0.chunk.js.LICENSE.txt": "./static/js/2.4cd5edc0.chunk.js.LICENSE.txt",
+    "static/media/portfolio.4eca01da.jpg": "./static/media/portfolio.4eca01da.jpg",
+    "static/media/portfolio.a54ce7ab.gif": "./static/media/portfolio.a54ce7ab.gif",
+    "static/media/ruby.1be9cbcc.gif": "./static/media/ruby.1be9cbcc.gif",
+    "static/media/ruby.37482264.jpg": "./static/media/ruby.37482264.jpg",
+    "static/media/test.da24d2b4.pdf": "./static/media/test.da24d2b4.pdf",
+    "static/media/trails.4f11ab95.jpg": "./static/media/trails.4f11ab95.jpg",
+    "static/media/trails.52a46c64.gif": "./static/media/trails.52a46c64.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ebc510a.js",
+    "static/js/runtime-main.eac7fa23.js",
     "static/js/2.4cd5edc0.chunk.js",
-    "static/css/main.d31a8e7a.chunk.css",
-    "static/js/main.fc4b3986.chunk.js"
+    "static/css/main.b662116f.chunk.css",
+    "static/js/main.47cf636b.chunk.js"
   ]
 }
