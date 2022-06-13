@@ -5,6 +5,8 @@ import rubyGif from './ruby.gif'
 import rubyImg from './ruby.jpg'
 import portGif from './portfolio.gif'
 import portImg from './portfolio.jpg'
+import aiGif from './ai.gif'
+import aiImg from './ai.png'
 import Icon from './icons'
 
 
@@ -60,6 +62,56 @@ function Projects(props) {
                                     <Icon icon="desktop"/>
                                 </a>
                                 <a rel="noreferrer" target="_blank" href="https://trails.dog" className="proj-button-link">
+                                    <span className="proj-button-text">Live view</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="project-wrp">
+                    <div className="left-clm">
+                        <div className="project-title">
+                            <a href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" rel="noreferrer" target="_blank">Deep Learning with MIDI</a>
+                            <a href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" rel="noreferrer" target="_blank">
+                                <div className='img-wrap'><img src={aiGif} alt="?" className='animated'/></div>
+                                <div className='img-wrap'><img src={aiImg} alt="?" className='still'/></div>
+                            </a>
+                            <p>This Google Co-Lab notebook is a machine learning and data mining final project that attempts to classify expressive drum samples using their MIDI transcriptions. The experiments contained in the notebook explore two different ways of encoding/embedding the MIDI data and two different deep learning models. Although this problem was difficult and prone to overfitting, the experiment ends in a paper analyzing the results and findings of the experiments.</p>
+                        </div>
+                    </div>
+                    <div className="right-clm">
+                        <div className="made">
+                            <h2>Made using</h2>
+                            <ul className="proj-lst">
+                                <li className="proj-item">Tensorflow</li>
+                                <li className="proj-item">Keras</li>
+                                <li className="proj-item">NumPy</li>
+                                <li className="proj-item">Jupyter</li>
+                            </ul>
+                        </div>
+                        <div className="features">
+                            <h2>Features</h2>
+                            <ul className="proj-lst">
+                                <li className="proj-item">Reccurant Nerual Network</li>
+                                <li className="proj-item">Deep Learning</li>
+                                <li className="proj-item">Results writeup</li>
+                            </ul>
+                        </div>
+                        <div className="links">
+                            <div className="git-link">
+                                <a rel="noreferrer" href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" target="_blank" className="proj-button">
+                                    <Icon icon="github"/>
+                                </a>
+                                <a rel="noreferrer" href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" target="_blank" className="proj-button-link">
+                                    <span className="proj-button-text">Source</span>
+                                </a>
+                            </div>
+                            <div className="view-link">
+                                <a rel="noreferrer" target="_blank" href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" className="proj-button">
+                                    <Icon icon="desktop"/>
+                                </a>
+                                <a rel="noreferrer" target="_blank" href="https://colab.research.google.com/drive/1WnPTxrS4OfTD3IY5HjJh5x5s-LQ8blaL?usp=sharing" className="proj-button-link">
                                     <span className="proj-button-text">Live view</span>
                                 </a>
                             </div>

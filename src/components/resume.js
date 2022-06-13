@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Document, Page, pdfjs } from "react-pdf"
-import resume from './test.pdf'
+import resumePDF from './hepworth_resume.pdf'
 import Icon from './icons'
 import printJS from "print-js"
 
@@ -39,7 +39,7 @@ function Resume(props) {
                       <p>{pageNumber} of {numPages}</p>
                       <button className="button-right"ype="button" disabled={pageNumber >= numPages} onClick={nextPage}>&gt;</button>
                     </div>
-                    <Document className="pdf" file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+                    <Document className="pdf" file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
                       <Page pageNumber={pageNumber} />
                     </Document>
                 </div>
@@ -51,7 +51,7 @@ function Resume(props) {
               </div>
               <div className="download-buttons">
                   <div className="dl-button-wrap">
-                    <a href="./test.pdf" download>
+                    <a href="./hepworth_resume.docx" download>
                       <div className="download-button">
                         <Icon icon="docx"/>
                         <span className="button-text">.docx</span>
@@ -60,7 +60,7 @@ function Resume(props) {
                     <span className="download-descs">-Save as a word document.</span>
                   </div>
                   <div className="dl-button-wrap">
-                    <a href="./test.pdf" download>
+                    <a href="./hepworth_resume.pdf" download>
                       <div className="download-button">
                         <Icon icon="pdf"/>
                         <span className="button-text">.pdf</span>
@@ -69,7 +69,7 @@ function Resume(props) {
                     <span id="pdf-desc" className="download-descs">-Save as a PDF file.</span>
                   </div>
                   <div className="dl-button-wrap">
-                    <div id="print-button" className="download-button" onClick={function() { printJS('/test.pdf') }}>
+                    <div id="print-button" className="download-button" onClick={function() { printJS('/hepworth_resume.pdf') }}>
                       <Icon icon="printer"/>
                       <span className="button-text">Print</span>
                     </div>
